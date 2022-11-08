@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo $TITLE > /var/www/html/index.html
-
+echo ${TITLE:=Hello} > /var/www/html/index.html
 
 nginx -g "daemon off;"
