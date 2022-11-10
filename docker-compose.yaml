@@ -6,8 +6,8 @@ services:
     ports:
     - '80'
     environment:
-    - TITLE=coffebreak-soon
-    - COLOR=lightblue
+    - TITLE=${TITLE:=Development}
+    - COLOR=${COLOR:=lightgreen}
   mydb:
     image: postgres
     environment:
