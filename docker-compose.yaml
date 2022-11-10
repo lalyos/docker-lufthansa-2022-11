@@ -1,5 +1,5 @@
 version: '3.3'
-services:
+services: 
   lunch:
   # image: 'lunch:v4'
     build: .
@@ -8,3 +8,11 @@ services:
     environment:
     - TITLE=coffebreak-soon
     - COLOR=lightblue
+  mydb:
+    image: postgres
+    environment:
+    - POSTGRES_PASSWORD=s3cr3t
+    volumes:
+    - food:/var/lib/postgresql/data
+volumes:
+  food: 
