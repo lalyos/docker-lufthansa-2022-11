@@ -14,5 +14,6 @@ services:
     - POSTGRES_PASSWORD=s3cr3t
     volumes:
     - food:/var/lib/postgresql/data
+    - ./sql:/docker-entrypoint-initdb.d
 volumes:
   food: 
