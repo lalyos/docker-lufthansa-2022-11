@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  lunch:
+    image: 'lunch:v4'
+    ports:
+    - '80'
+    environment:
+    - TITLE=coffebreak-soon
+    - COLOR=lightblue
