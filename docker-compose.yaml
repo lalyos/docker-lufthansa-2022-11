@@ -1,7 +1,8 @@
 version: '3.3'
 services:
   lunch:
-    image: 'lunch:v4'
+  # image: 'lunch:v4'
+    build: .
     ports:
     - '80'
     environment:
