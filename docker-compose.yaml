@@ -8,6 +8,7 @@ services:
     environment:
     - TITLE=${TITLE:-Development}
     - COLOR=${COLOR:-lightgreen}
+    - BODY=${BODY:-Please use TITLE/COLOR/BODY}
   mydb:
     image: postgres
     environment:
