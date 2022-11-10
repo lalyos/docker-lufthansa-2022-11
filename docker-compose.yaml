@@ -20,5 +20,8 @@ services:
     restart: always
     ports:
       - 8080:8080
+  util:
+    image: cmd.cat/curl
+    command: sleep 9999
 volumes:
   food: 
