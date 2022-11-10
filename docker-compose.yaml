@@ -1,8 +1,8 @@
 version: '3.3'
 services: 
   lunch:
-  # image: 'lunch:v4'
-    build: .
+    image: 'lunch:v4'
+    #build: .
     ports:
     - '80'
     environment:
@@ -15,5 +15,10 @@ services:
     volumes:
     - food:/var/lib/postgresql/data
     - ./sql:/docker-entrypoint-initdb.d
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
 volumes:
   food: 
