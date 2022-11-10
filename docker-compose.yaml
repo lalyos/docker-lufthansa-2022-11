@@ -1,7 +1,7 @@
 version: '3.3'
 services: 
   lunch:
-    image: 'lunch:v4'
+    image: 'lalyos/lunch:v4'
     #build: .
     ports:
     - '80'
@@ -19,7 +19,7 @@ services:
     image: adminer
     restart: always
     ports:
-      - 8080:8080
+      - 8080
   util:
     image: cmd.cat/curl
     command: sleep 9999
