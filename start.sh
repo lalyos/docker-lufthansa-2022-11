@@ -6,6 +6,10 @@ cat > /var/www/html/index.html <<EOF
 <h1>${TITLE:=Hello}</h1>
 
 ${BODY:=Please use TITLE/COLOR/BODY env vars}
+
+<hr>
+Copiright 2002.
+
 </body>
 </html>
 EOF
